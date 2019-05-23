@@ -30,7 +30,7 @@ public class CsvDescriptive {
         while ((employeeDetails = csvReader.readNext()) != null) {
 
             //Save the employee details in Employee object
-            Employee employee = new Employee(Integer.parseInt(employeeDetails[0]),
+            Employee employee = new Employee(Integer.parseInt(employeeDetails[0].trim()),
                     employeeDetails[1], employeeDetails[2],
                     Integer.parseInt(employeeDetails[3]));
             empList.add(employee);
